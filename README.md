@@ -72,6 +72,8 @@ DELETE FROM Notes;
 
 ----
 <h3><b>Statistics</b></h3>
+<img src="https://github.com/zuckgrass/Evowill/blob/main/TestTask/StatisticsYear.png" alt="statistics-per-year">
+<img src="https://github.com/zuckgrass/Evowill/blob/main/TestTask/StatisticsMonth.png" alt="statistics-per-year-month">
 :white_check_mark: Подивитися статистику витрат: за день, за місяць, за рік.
 
 <i>Запити для дізнавання інформації про витрати: скільки витратили в цьому проміжку часу грощей та розподілення у відсотках витрат на кожну категорію з точністю до сотих відсотка. Користувачу потрібно ввести ім'я, рік або рік і місяць, або рік, місяць і день.</i>
@@ -110,6 +112,7 @@ Day(Date)=3
 ```
 ----
 <h3><b>Window2</b></h3>
+<img src="https://github.com/zuckgrass/Evowill/blob/main/TestTask/Window2.png" alt="window2_screen">
 :white_check_mark:Отримувати статистику витрат — по всім категоріям одразу.
 
 <i>У цьому вікні користувачу нічого не потрібно вводити. Тут можна переглянути статистику найбільших витратників та суму грошей вони віддали, а також категорії витрат, на які в середньому витрачають найбільше грошей.</i>
