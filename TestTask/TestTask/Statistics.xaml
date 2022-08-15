@@ -1,0 +1,49 @@
+﻿<Window x:Class="TestTask.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTask"
+        mc:Ignorable="d"
+        
+        WindowStartupLocation="CenterOwner"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/evowill_logo.png"/>
+        </Grid.Background>
+        <ComboBox x:Name="UserNamesBox" HorizontalAlignment="Left" Height="37" Margin="45,102,0,0" VerticalAlignment="Top" Width="174" FontSize="11"/>
+        <Label Content="       Виберіть користувача, &#xA;щоб дізнатись його статистику" HorizontalAlignment="Left" Height="43" Margin="43,62,0,0" VerticalAlignment="Top" Width="178" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="ForAll" Content="Дізнатись статистику&#xD;&#xA; за всіма витратами" HorizontalAlignment="Left" Height="65" Margin="290,77,0,0" VerticalAlignment="Top" Width="240" FontSize="16" Click="ForAll_Click" BorderBrush="{x:Null}">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0071FF"/>
+                    <GradientStop Color="#FFEAFF00" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="Day" HorizontalAlignment="Left" Height="42" Margin="23,306,0,0" TextWrapping="Wrap" Text="Введіть день" VerticalAlignment="Top" Width="218" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="Gray"/>
+        <TextBox x:Name="Month" HorizontalAlignment="Left" Height="41" Margin="23,242,0,0" TextWrapping="Wrap" Text="Введіть номер місяця" VerticalAlignment="Top" Width="218" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="Gray"/>
+        <TextBox x:Name="Year" HorizontalAlignment="Left" Height="42" Margin="23,175,0,0" TextWrapping="Wrap" Text="Введіть рік" VerticalAlignment="Top" Width="218" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="Gray"/>
+        <Label x:Name="MoneyAmount" Content="" HorizontalAlignment="Left" Height="36" Margin="344,37,0,0" VerticalAlignment="Top" Width="132" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" RenderTransformOrigin="0.314,0.39"/>
+        <Label Content="Розваги" HorizontalAlignment="Left" Height="36" Margin="569,70,0,0" VerticalAlignment="Top" Width="132" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+        <Label Content="Шопінг" HorizontalAlignment="Left" Height="36" Margin="569,124,0,0" VerticalAlignment="Top" Width="132" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+        <Label Content="Косметика" HorizontalAlignment="Left" Height="36" Margin="569,189,0,0" VerticalAlignment="Top" Width="132" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+        <Label Content="Засоби гігієни" HorizontalAlignment="Left" Height="36" Margin="569,252,0,0" VerticalAlignment="Top" Width="132" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+        <Label Content="ЗСУ" HorizontalAlignment="Left" Height="36" Margin="569,311,0,0" VerticalAlignment="Top" Width="132" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+        <Label Content="Гаджети" HorizontalAlignment="Left" Height="36" Margin="569,369,0,0" VerticalAlignment="Top" Width="132" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+        <Label x:Name="Food" Content="" HorizontalAlignment="Left" Height="36" Margin="701,12,0,0" VerticalAlignment="Top" Width="89" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" RenderTransformOrigin="0.314,0.39"/>
+        <Label x:Name="Entertain" Content="" HorizontalAlignment="Left" Height="36" Margin="701,66,0,0" VerticalAlignment="Top" Width="89" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" RenderTransformOrigin="0.314,0.39"/>
+        <Label x:Name="Shopping" Content="" HorizontalAlignment="Left" Height="36" Margin="701,124,0,0" VerticalAlignment="Top" Width="89" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" RenderTransformOrigin="0.314,0.39"/>
+        <Label x:Name="Cosmetics" Content="" HorizontalAlignment="Left" Height="36" Margin="701,187,0,0" VerticalAlignment="Top" Width="89" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" RenderTransformOrigin="0.298,0.459"/>
+        <Label x:Name="Hygiene" Content="" HorizontalAlignment="Left" Height="36" Margin="701,252,0,0" VerticalAlignment="Top" Width="89" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" RenderTransformOrigin="0.314,0.39"/>
+        <Label x:Name="Peace" Content="" HorizontalAlignment="Left" Height="36" Margin="701,311,0,0" VerticalAlignment="Top" Width="89" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" RenderTransformOrigin="0.314,0.39"/>
+        <Label x:Name="Gadget" Content="" HorizontalAlignment="Left" Height="36" Margin="701,369,0,0" VerticalAlignment="Top" Width="89" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" RenderTransformOrigin="0.314,0.39"/>
+        <Button x:Name="Return" HorizontalAlignment="Left" Height="53" Margin="300,357,0,0" VerticalAlignment="Top" Width="220" FontSize="18" Content="Повернутись до&#xD;&#xA;головного вікна" Background="#FF35FF00" Click="Return_Click" BorderBrush="#FF0FB700"/>
+        <Button x:Name="Exit_Copy" Content="Вийти з програми" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="220" FontSize="18" Click="Exit_Click" Margin="300,270,0,0" Background="Red" BorderBrush="#FF810000"/>
+        <Label Content="Кількість грошей, яку було витрачено" HorizontalAlignment="Left" Height="36" Margin="283,10,0,0" VerticalAlignment="Top" Width="254" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" RenderTransformOrigin="0.314,0.39"/>
+        <Label x:Name="Entertain_Copy" Content="Їжа" HorizontalAlignment="Left" Height="36" Margin="590,12,0,0" VerticalAlignment="Top" Width="90" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" RenderTransformOrigin="0.314,0.39"/>
+        <Button Content="Статистика всіх учасників" HorizontalAlignment="Left" Height="37" Margin="300,311,0,0" VerticalAlignment="Top" Width="220" Background="#FFFFC500" FontSize="18" Click="Button_Click" BorderBrush="#FFE9A500"/>
+
+    </Grid>
+</Window>
