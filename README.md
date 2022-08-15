@@ -2,6 +2,7 @@
  <img src="https://static.wixstatic.com/media/c57a4e_07ea5b6f0656421f993e6dc8832a1ebe~mv2.jpg" alt="evowill-logo">
 <h2><i>Test Task</i></h2>
 <h3><b>MainWindow</b></h3>
+<img src="https://github.com/zuckgrass/Evowill/blob/main/TestTask/MainWindow.png" alt="mainwindow_screen">
 :white_check_mark: Отримання статистики по одній категорії витрат для певного користувача.
 
 <i>SQL запит для середньої ціни витрати на певний товар. Від користувача потрібно лише введення імені та назви товару.</i>
